@@ -43,3 +43,10 @@ If you want to update README.md file, run that script while being in 'hooks' fol
 | s3\_object\_version | he object version containing the function's deployment package. Conflicts with filename. | string | `""` | no |
 | source\_code\_hash | Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either filename or s3_key. The usual way to set this is ${filebase64sha256(file.zip)} (Terraform 0.11.12 or later) or ${base64sha256(file(file.zip))} (Terraform 0.11.11 and earlier), where file.zip is the local filename of the lambda layer source archive. | string | `""` | no |
 
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| arn | The Amazon Resource Name (ARN) of the Lambda Layer with version. |
+| layer\_arn | The Amazon Resource Name (ARN) of the Lambda Layer without version |
+
