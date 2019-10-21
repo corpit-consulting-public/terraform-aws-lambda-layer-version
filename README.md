@@ -49,4 +49,5 @@ If you want to update README.md file, run that script while being in 'hooks' fol
 |------|-------------|
 | arn | The Amazon Resource Name (ARN) of the Lambda Layer with version. |
 | layer\_arn | The Amazon Resource Name (ARN) of the Lambda Layer without version |
+| version | This Lamba Layer version. |
 
