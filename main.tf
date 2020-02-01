@@ -5,4 +5,5 @@ resource "aws_lambda_layer_version" "lambda_layer" {
   compatible_runtimes = ["${var.compatible_runtimes}"]
   s3_bucket           = "${var.s3_bucket}"
   s3_key              = "${var.s3_key}"
+  s3_object_version   = "${var.s3_object_version}"
 }
