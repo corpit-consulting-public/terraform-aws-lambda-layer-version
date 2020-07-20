@@ -33,7 +33,7 @@ variable "description" {
 }
 
 variable "compatible_runtimes" {
-  type        = list
+  type        = list(string)
   description = "A list of Runtimes this layer is compatible with. Up to 5 runtimes can be specified."
   default     = []
 }
